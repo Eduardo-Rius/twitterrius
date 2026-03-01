@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Twitter Rius</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navegación Superior (Desktop) -->
+        <header class="glass">
+            <div class="header-content">
+                <h1 class="logo">Twitter Rius</h1>
+                <div class="desktop-nav">
+                    <a href="#" class="nav-item active">🏠 Inicio</a>
+                    <a href="#new" class="nav-item">➕ Nuevo</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenido dinámico -->
+        <main id="content" class="fade-in">
+            <div class="loader-container">
+                <div class="spinner"></div>
+                <p>Cargando el universo...</p>
+            </div>
+        </main>
+
+        <!-- Navegación Inferior (Mobile) -->
+        <nav class="mobile-nav glass">
+            <a href="#" class="mobile-nav-item active">🏠</a>
+            <a href="#new" class="mobile-nav-item">➕</a>
+        </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
